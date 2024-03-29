@@ -26,7 +26,7 @@ class RecipeSimilarity(object):
 
         self.emb = {recipe_id[i]:ingre_emb[i] for i in range(len(recipe_id))}
 
-    def get_cosine_distance(self, rec1, rec2, type='manhattan'):
+    def get_cosine_distance(self, rec1, rec2, type='cosine'):
         if isinstance(rec1, str):
             rec1 = [rec1]
 
