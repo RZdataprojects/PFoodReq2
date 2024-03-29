@@ -23,21 +23,21 @@ Fetch the pretrained vectors for our vocabulary.
 
 6. The default option is GLOVE embeddings and Cosine Similarity.
 
-- To activate the use of GPT-2 embeddings, go to PFoodReq2/BAMnet/src/core/utils/generic_utils.py and in both load_embedding() methods, set "use_gpt_enbeddings=True".
+- To activate the use of GPT-2 embeddings, go to PFoodReq2/BAMnet/src/core/utils/generic_utils.py and in both load_embedding() methods, set "use_gpt_embeddings=True".
 - To activate Manhatten Distance instead of Cosine Similiarity, go to BAMnet/src/core/recipe_similarity.py and in the get_cosine_distance() method set "type='manhatten'".
 
 To train the KBQA model.
 
- python train.py -config config/pfoodreq.yml
+    python train.py -config config/pfoodreq.yml
 
 To test the KBQA model:
 
- python run_online.py -config config/pfoodreq.yml
+    python run_online.py -config config/pfoodreq.yml
 
 To train the KBQA+RecipeSim model.
 
-python train.py -config config/pfoodreq_similar_recipes.yml
+    python train.py -config config/pfoodreq_similar_recipes.yml
 
 To test the KBQA+RecipeSim model:
 
-python run_online.py -config config/pfoodreq_similar_recipes.yml
+    python run_online.py -config config/pfoodreq_similar_recipes.yml
