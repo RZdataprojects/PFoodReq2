@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 C:/Users/Roei/Documents/PFoodReq/PFoodReq2/PFoodReq2/data/recipe_kg/recipe_kg.json filter=lfs diff=lfs merge=lfs -text
+data/recipe_kg/recipe_kg.json filter=lfs diff=lfs merge=lfs -text
