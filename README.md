@@ -5,7 +5,8 @@ In order to reproduce our expriements:
 1. Clone the repository to a GPU supported environment.
 2. Use pip install -r requirements.txt to install requirements
 3. Then use pip install rapidfuzz and pip install torch==0.4.1 torchvision==0.2.1 -f https://download.pytorch.org/whl/torch_stable.html
-4. Go to the BAMnet/src folder
+4. Login via BGU to Google and download: https://drive.google.com/file/d/1hSIt-uoTvPOt9q7pIZKypkh9HLA_wCEZ/view?usp=sharing, place it in PFoodReq2\data\recipe_kg.
+5. Go to the BAMnet/src folder
 
 For each time you change embeddings, you need to re-process the data with your chosen embeddings:
 
