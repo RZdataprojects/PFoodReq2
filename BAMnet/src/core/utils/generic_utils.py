@@ -77,7 +77,7 @@ def normalize_answer(s):
 
     return white_space_fix(remove_articles(lower(s)))
 
-def load_embeddings(vocab_dict, file_path, out_path, scale=0.08, seed=123, dtype=np.float32, use_gpt_enbeddings=False):
+def load_embeddings(vocab_dict, file_path, out_path, scale=0.08, seed=123, dtype=np.float32, use_gpt_embeddings=False):
     np.random.seed(seed)
     
     embeddings = None
@@ -152,7 +152,7 @@ class PreTrainEmbedding():
                 continue
         return None
 
-def load_embeddings(word2index, file_path, out_path, scale=0.08, seed=123, dtype=np.float32, use_gpt_enbeddings=False):
+def load_embeddings(word2index, file_path, out_path, scale=0.08, seed=123, dtype=np.float32, use_gpt_embeddings=False):
     np.random.seed(seed)
 
     embeddings = None
