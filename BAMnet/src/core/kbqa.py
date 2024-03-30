@@ -259,7 +259,7 @@ class KBQA(object):
         similarity_distance = similar_recipes.get(answer, {}).get('distance', None)
 
         if similarity_distance is None:
-            ret_sim = self.recipe_similairty.get_cosine_distance(answer, similar_recipes)
+            ret_sim = sum(self.recipe_similairty.get_cosine_distance(answer, similar_recipes))
             similarity_distance = KBQA.max_similarity_distance if ret_sim is None else ret_sim.min()
 
         return similarity_distance
